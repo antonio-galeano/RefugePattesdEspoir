@@ -1,0 +1,8 @@
+@use 'variables' as *;
+
+.separator {
+    width: 90%;
+    height: 0.5px;
+    background-color: $secondary-color;
+    margin: 20px auto;
+}

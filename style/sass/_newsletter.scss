@@ -1,0 +1,80 @@
+@use 'variables' as *;
+@use 'extends';
+
+.newsletter {
+    padding: 20px;
+    text-align: center;
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .input-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        label {
+            margin-right: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin-right: 5px;
+            flex-grow: 1;
+            border: 1px solid $gray-color;
+        }
+
+        button {
+            @extend %base-button;
+            background-color: $secondary-color;
+            margin: 10px;
+
+            &:hover {
+                background-color: lighten($secondary-color, 10%);
+            }
+        }
+
+        .error-message {
+            @extend %error-message;
+            width: 100%;
+            margin: 1% 40% 0 0;
+        }
+    }
+
+    @media (max-width: 494px) {
+        .input-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px;
+
+            label {
+                text-align: left;
+                width: 100%;
+            }
+
+            input {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 5px;
+                order: 1;
+            }
+
+            .error-message {
+                order: 2;
+                width: 100%;
+                margin-top: 0;
+            }
+
+            button {
+                width: auto;
+                max-width: 80%;
+                margin: 1% 0 0 30%;
+                order: 3;
+            }
+        }
+    }
+}

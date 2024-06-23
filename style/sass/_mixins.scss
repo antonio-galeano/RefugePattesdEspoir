@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+
+@mixin social-icons-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+  .social-icon {
+      margin: 0 5px;
+      width: $icon-size;
+      height: $icon-size;
+  }
+}
+
+
+
+@mixin section-header($header-color: $secondary-color, $margin-bottom-h2: 10px, $margin-bottom-p: null) {
+  margin-bottom: 30px;
+
+  h2 {
+    color: $header-color;
+    margin-bottom: $margin-bottom-h2;
+  }
+
+  p {
+    color: $header-color;
+    margin-bottom: $margin-bottom-p;
+  }
+}

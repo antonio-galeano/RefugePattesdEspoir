@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, figcaption {
+    margin: 0;
+}
+
+body {
+    font-family: $font-primary;
+    line-height: 1.2;
+    font-size: 16px;
+    background: $background-white;
+    color: $secondary-color;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:focus {
+        outline: none;
+        background-color: $background-light;
+        color: $primary-color;
+        box-shadow: 0 0 0 3px $secondary-color;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

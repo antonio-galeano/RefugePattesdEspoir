@@ -1,0 +1,16 @@
+@use 'variables' as *;
+@use 'extends';
+
+.cta {
+    background-color: $background-gray;
+    padding: 40px 0;
+    margin: 40px 0;
+    text-align: center;
+    width: 100%;
+
+    button {
+        @extend %base-button;
+        background-color: $secondary-color;
+        margin: 8px;
+    }
+}

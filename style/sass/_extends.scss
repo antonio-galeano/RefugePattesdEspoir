@@ -1,0 +1,27 @@
+@use 'variables' as *;
+
+// Placeholder pour les boutons
+%base-button {
+  background-color: $primary-color;
+  color: $white-color;
+  border: 1px solid $gray-color;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $background-bluegray;
+  }
+}
+
+// Placeholder pour les messages d'erreur lors de la validation des formulaires
+%error-message {
+  color: $red-color;
+  font-size: 12px;
+  height: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+

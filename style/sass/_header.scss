@@ -1,0 +1,118 @@
+@use 'variables' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-light;
+  padding: 10px 20px;
+  color: $primary-color;
+
+  &__logo {
+    img {
+      max-width: 60%;
+      height: auto;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      position: relative;
+      margin-left: 20px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+        display: block;
+        padding: 10px;
+
+        &:hover,
+        &:focus {
+          background-color: darken($secondary-color, 10%);
+        }
+
+        &.active {
+          color: $primary-color;
+        }
+      }
+
+      &:hover .header__submenu,
+      &:focus-within .header__submenu {
+        display: block;
+      }
+    }
+  }
+
+  &__submenu {
+    display: none;
+    position: absolute;
+    background-color: $secondary-color;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 140px;
+
+    a {
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      display: block;
+
+      &:hover,
+      &:focus {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      background-color: $primary-color;
+      margin: 4px 0;
+      width: 25px;
+      height: 2px;
+    }
+
+    @media screen and (max-width: 960px) {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header__nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: $background-light;
+    box-shadow: 0 8px 16px $gray-color;
+    width: 100%;
+
+    &-item {
+      margin-left: 0;
+      padding: 10px 0;
+      text-align: center;
+
+      a {
+        padding: 10px;
+      }
+    }
+  }
+
+  .header__nav.show {
+    display: flex;
+  }
+}

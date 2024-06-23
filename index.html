@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refuge Pattes d'Espoir - Adoption et Protection des Animaux</title>
+  <link rel="stylesheet" href="style/css/normalize.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to Content</a>
+  <header class="header">
+    <div class="header__logo">
+      <a href="#">
+        <img src="img/logo.png" alt="Logo">
+      </a>
+    </div>
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <a href="#accueil">Accueil</a>
+        <div class="header__submenu">
+          <a href="#newsletter">Bulletin</a>
+          <a href="#cta">Donations</a>
+        </div>
+      </div>
+      <div class="header__nav-item">
+        <a href="#benevolat">Bénévolat</a>
+        <div class="header__submenu">
+          <a href="#galerie">Photos</a>
+          <a href="#statistiques">Statistiques</a>
+        </div>
+      </div>
+      <div class="header__nav-item">
+        <a href="#equipe">Notre équipe</a>
+      </div>
+      <div class="header__nav-item">
+        <a href="#contact">Contactez-nous</a>
+      </div>
+    </nav>
+    <div class="header__hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <main id="main-content">
+    <div id="accueil" class="hero">
+      <img src="img/hero-img.png" alt="Des animaux heureux dans notre refuge">
+    </div>
+    <div class="separator"></div>
+    <div id="newsletter" class="newsletter">
+      <div class="container">
+        <p>Restez informé des nouvelles et événements de notre refuge.</p>
+        <div class="input-wrapper">
+          <label for="newsletter-email">E-mail</label>
+          <input type="email" id="newsletter-email" placeholder="Adresse e-mail">
+          <button>Inscrivez-vous</button>
+          <div class="error-message"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cta" class="cta">
+      <div class="container">
+        <span>Votre générosité fait la différence dans leur vie.</span>
+        <button>Faites un Don</button>
+      </div>
+    </div>
+    <section id="features" class="features">
+      <div class="container">
+        <div class="features__header">
+          <h2>Rejoignez-nous pour une noble cause</h2>
+          <p>
+            Rien n'est plus gratifiant que de venir en aide à ces petits êtres
+            en détresse.
+          </p>
+        </div>
+        <div class="features__group">
+          <div id="benevolat" class="features__item">
+            <img src="img/feature-img.png" alt="Icône de patte pour adoption">
+            <h2>Adoption</h2>
+            <p>
+              Accueillez un compagnon pour la vie. En adoptant, vous offrez à
+              un animal une seconde chance et la promesse d'un foyer.
+            </p>
+          </div>
+          <div id="volontariat" class="features__item">
+            <img src="img/feature-img.png" alt="Icône de patte pour volontariat">
+            <h2>Volontariat</h2>
+            <p>
+              Engagez-vous à nos côtés en tant que bénévole, contribuez au
+              bien-être des animaux et à l'amélioration de leur vie.
+            </p>
+          </div>
+          <div id="don" class="features__item">
+            <img src="img/feature-img.png" alt="Icône de patte pour dons">
+            <h2>Donation</h2>
+            <p>
+              Votre soutien peut faire la différence. Chaque don contribue à
+              sauver, protéger et soigner les animaux en détresse.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="separator"></div>
+    <div id="galerie" class="shelter-gallery">
+      <div class="gallery__column gallery__column--left">
+        <img class="gallery__image--square" src="img/gallery/chien-1.png" alt="Garçon souriant avec un chien assis à son côté.">
+      </div>
+      <div class="gallery__column gallery__column--middle">
+        <div class="gallery__row">
+          <img class="gallery__image--large-top" src="img/gallery/chien-2.png" alt="Fille rigolant avec un chien assis sur ses genoux.">
+          <img class="gallery__image--small-top" src="img/gallery/chat-1.png" alt="Fille avec un chat assis à son côté.">
+        </div>
+        <div class="gallery__row">
+          <img class="gallery__image--small-bottom" src="img/gallery/chat-2.png" alt="Femme caressant un chat.">
+          <img class="gallery__image--large-bottom" src="img/gallery/chien-3.png" alt="Garçon souriant avec un chien assis à son côté.">
+        </div>
+      </div>
+      <div class="gallery__column gallery__column--right">
+        <img class="gallery__image--medium" src="img/gallery/chat-3.png" alt="Mère avec son petit bébé et un chat.">
+      </div>
+    </div>
+    <div class="separator"></div>
+    <section id="statistiques" class="info-section">
+      <div class="info-section__image-container">
+        <img src="img/graph.png" alt="Graphique montrant les statistiques d'adoption et de sauvetage des animaux" class="info-section__image">
+      </div>
+      <div class="info-section__text">
+        <h2>Des statistiques</h2>
+        <p>
+          Découvrez l'impact considérable de nos efforts : le nombre total
+          d'animaux aidés et sauvés par notre refuge au cours de l'année 2023.
+          Un engagement envers le bien-être animal.
+        </p>
+        <div class="info-section__text-split">
+          <div class="text-split__left">
+            <h3>150</h3>
+            <p>Chiens adoptés</p>
+            <button>En savoir plus</button>
+          </div>
+          <div class="text-split__right">
+            <h3>230</h3>
+            <p>Chats sauvés</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="separator"></div>
+    <section id="equipe" class="team-section">
+      <div class="team__header">
+        <h2>Notre équipe dévouée</h2>
+        <p>Rencontrez les héros derrière nos actions</p>
+      </div>
+      <div class="team-section__cards">
+        <div class="card-container">
+          <div class="card">
+            <img src="img/team/team1.jpg" alt="Nicolas Dubois, directeur" class="card__image">
+            <h3 class="card__title">Nicolas Dubois</h3>
+            <h4 class="card__title">Directeur</h4>
+            <p class="card__description">
+              Passionné par le bien-être animal, Nicolas dirige nos
+              initiatives de sauvetage et d'adoption depuis plus de dix ans.
+            </p>
+            <div class="card__socials">
+              <a href="#" aria-label="Visitez notre page Facebook">
+                <img src="img/socialmedia/facebook.svg" alt="Facebook logo" class="social-icon"></a>
+              <a href="#" aria-label="Visitez notre page Twitter">
+                <img src="img/socialmedia/twitter.svg" alt="Twitter logo" class="social-icon"></a>
+              <a href="#" aria-label="Visitez notre page Instagram">
+                <img src="img/socialmedia/instagram.svg" alt="Instagram logo" class="social-icon"></a>
+            </div>
+          </div>
+        </div>
+        <div class="vertical-bar"></div>
+        <div class="card-container">
+          <div class="card">
+            <img src="img/team/team2.jpg" alt="Julienne Moreau, vétérinaire" class="card__image">
+            <h3 class="card__title">Julienne Moreau</h3>
+            <h4 class="card__title">Vétérinaire</h4>
+            <p class="card__description">
+              Julienne apporte une expertise vétérinaire exceptionnelle,
+              assurant les meilleurs soins pour nos animaux secourus.
+            </p>
+            <div class="card__socials">
+              <a href="#" aria-label="Visitez notre page Facebook">
+                <img src="img/socialmedia/facebook.svg" alt="Facebook logo" class="social-icon"></a>
+              <a href="#" aria-label="Visitez notre page Twitter">
+                <img src="img/socialmedia/twitter.svg" alt="Twitter logo" class="social-icon"></a>
+              <a href="#" aria-label="Visitez notre page Instagram">
+                <img src="img/socialmedia/instagram.svg" alt="Instagram logo" class="social-icon"></a>
+            </div>
+          </div>
+        </div>
+        <div class="vertical-bar"></div>
+        <div class="card-container">
+          <div class="card">
+            <img src="img/team/team3.jpg" alt="Alain Rousseau, responsable des bénévoles" class="card__image">
+            <h3 class="card__title">Alain Rousseau</h3>
+            <h4 class="card__title">Responsable des bénévoles</h4>
+            <p class="card__description">
+              Alain anime notre réseau de bénévoles, essentiel pour soutenir
+              nos opérations quotidiennes et nos événements spéciaux.
+            </p>
+            <div class="card__socials">
+              <a href="#" aria-label="Visitez notre page Facebook">
+                <img src="img/socialmedia/facebook.svg" alt="Facebook logo" class="social-icon"></a>
+              <a href="#" aria-label="Visitez notre page Twitter">
+                <img src="img/socialmedia/twitter.svg" alt="Twitter logo" class="social-icon"></a>
+              <a href="#" aria-label="Visitez notre page Instagram">
+                <img src="img/socialmedia/instagram.svg" alt="Instagram logo" class="social-icon"></a>
+            </div>
+          </div>
+        </div>
+        <div class="vertical-bar"></div>
+        <div class="card-container">
+          <div class="card">
+            <img src="img/team/team4.jpg" alt="Sophie Bernard, coordinatrice des adoptions" class="card__image">
+            <h3 class="card__title">Sophie Bernard</h3>
+            <h4 class="card__title">Coordinatrice des adoptions</h4>
+            <p class="card__description">
+              Avec une grande empathie, Sophie aide nos animaux à trouver un
+              foyer aimant et veille à leur bonne intégration.
+            </p>
+            <div class="card__socials">
+              <a href="#" aria-label="Visitez notre page Facebook">
+                <img src="img/socialmedia/facebook.svg" alt="Facebook logo" class="social-icon"></a>
+              <a href="#" aria-label="Visitez notre page Twitter">
+                <img src="img/socialmedia/twitter.svg" alt="Twitter logo" class="social-icon"></a>
+              <a href="#" aria-label="Visitez notre page Instagram">
+                <img src="img/socialmedia/instagram.svg" alt="Instagram logo" class="social-icon"></a>
+            </div>
+          </div>
+        </div>
+        <div class="vertical-bar"></div>
+      </div>
+    </section>
+    <div class="separator"></div>
+
+    <div id="contact" class="map-section">
+      <div class="map-section__map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.2719363474594!2d-72.55036088446463!3d46.34049427911915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc7543b1b8c4031%3A0xa8e3216b7a8ee1a4!2sC%C3%A9gep%20de%20Trois-Rivi%C3%A8res!5e0!3m2!1sen!2sca!4v1592675361524!5m2!1sen!2sca"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="map-section__form-container">
+        <form id="contact-form" class="map-section__form">
+          <div class="input-group">
+            <label for="lastName">Nom de famille:</label>
+            <input type="text" id="lastName" placeholder="Nom de famille">
+            <div class="error-message"></div>
+          </div>
+          <div class="input-group">
+            <label for="firstName">Prénom:</label>
+            <input type="text" id="firstName" placeholder="Prénom">
+            <div class="error-message"></div>
+          </div>
+          <div class="input-group">
+            <label for="email">Adresse électronique:</label>
+            <input type="text" id="email" placeholder="Adresse électronique">
+            <div class="error-message"></div>
+          </div>
+          <div class="input-group">
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Message"></textarea>
+            <div class="error-message"></div>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="separator"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav class="footer__nav">
+        <a href="#" class="footer__nav-link">À propos</a>
+        <a href="#" class="footer__nav-link">Services</a>
+        <a href="#" class="footer__nav-link">Tarifs</a>
+        <a href="#" class="footer__nav-link">Carrière</a>
+        <a href="#" class="footer__nav-link">FAQs</a>
+        <a href="#" class="footer__nav-link">Vie privée</a>
+      </nav>
+    </div>
+    <div class="footer__separator"></div>
+    <div class="footer__bottom">
+      <div class="footer__info">Fait par: Glay Antonio Galeano Rodriguez</div>
+      <div class="footer__social-icons">
+        <a href="#" aria-label="Visitez notre page Facebook">
+          <img src="img/socialmedia-white/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#" aria-label="Visitez notre page LinkedIn">
+          <img src="img/socialmedia-white/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="#" aria-label="Visitez notre page Twitter">
+          <img src="img/socialmedia-white/twitter.svg" alt="Twitter">
+        </a>
+        <a href="#" aria-label="Visitez notre page Instagram">
+          <img src="img/socialmedia-white/instagram.svg" alt="Instagram">
+        </a>
+      </div>
+      <div class="footer__contact">
+        <span class="footer__phone"><img src="img/socialmedia-white/phone.svg" alt="Téléphone"><a href="tel:1234567890">(123) 456-7890</a></span>
+        <span class="footer__email"><img src="img/socialmedia-white/mail.svg" alt="Adresse électronique"><a href="mailto:info@example.com">info@example.com</a></span>
+      </div>
+    </div>
+  </footer>
+  <div class="scroll-to-top">
+    <div class="scroll-to-top__button">&uarr;</div>
+  </div>
+</body>
+
+</html>
