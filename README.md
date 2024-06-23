@@ -5,7 +5,7 @@ https://github.com/antonio-galeano/RefugePattesdEspoir.git
 
 Ce projet fait partie d'une série éducative conçue pour améliorer la compréhension de l'approche BEM, l'utilisation de SASS (SCSS), les variables, les mixins et les extensions pour la gestion du style, l'organisation modulaire du style et le design réactif.
 
-Démo: Une démonstration en direct de ce projet est disponible sur la plateforme Netlify:
+Démo: Une démonstration en direct de ce projet est disponible sur la plateforme Netlify: https://refugepattesdespoir.netlify.app
 
 Le site Web "Refuge Pattes d'Espoir" aide à l'adoption et à la protection des animaux. Il permet de faire des dons et du bénévolat facilement.
 
